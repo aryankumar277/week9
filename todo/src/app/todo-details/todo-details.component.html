@@ -1,0 +1,15 @@
+<table border="2px">
+
+  <tr>
+    <th>Name</th>
+    <th>Semester</th>
+    <th>CGPA</th>
+  </tr>
+
+  <tr *ngFor="let item of stud_det">
+    <td>{{ item.name }}</td>
+    <td>{{ item.sem }}</td>
+    <td>{{ item.cgpa }}</td>
+  </tr>
+
+</table>

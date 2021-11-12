@@ -1,0 +1,12 @@
+<mat-selection-list #student [multiple]="false">
+  <mat-list-option *ngFor="let item of stud_det" [value]="item">
+    {{item.name}}
+  </mat-list-option>
+</mat-selection-list>
+
+<p>
+  <br>
+  Semester: {{student.selectedOptions.selected[0]?.value.sem}}
+  <br>
+  CGPA: {{student.selectedOptions.selected[0]?.value.cgpa}}
+</p>
